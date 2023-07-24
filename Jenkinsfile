@@ -1,6 +1,6 @@
 node(){
 
-	def sonarHome = tool name: 'SonarScanner', type: 'hudson.plugins.sonar.SonarRunnerInstallation'
+	
 	
 	stage('Code Checkout'){
 		checkout scm
@@ -9,12 +9,7 @@ node(){
 		sh "mvn clean install"
 	}
 
-    stage('Code Scan'){
-		withSonarQubeEnv(credentialsId: 'SonarQubeCreds') {
-			sh "${sonarHome}/bin/sonar-scanner"
-		}
-		
-	}
+
 	
 	stage('archiveArtifacts'){
 		
