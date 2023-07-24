@@ -20,7 +20,7 @@ node(){
 
     	stage('teststage'){
 		
-			echo 'testing'
+			echo 'testing' 
 		
 		
 	}
