@@ -27,7 +27,7 @@ node(){
 
 	stage('teststage 4 CODE SCANNING DEMO FOR Kalpana'){
 		
-			echo 'kalpana code scanning' 
+			echo 'kalpana code scanning at github' 
 		
 		
 	}
