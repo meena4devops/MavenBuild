@@ -2,7 +2,7 @@ node(){
 
 	
 	
-	stage('Code Checkout'){
+	stage('Code Checkout 4 KALPANA'){
 		checkout scm
 	}
 	stage('Build'){
@@ -21,6 +21,13 @@ node(){
     	stage('teststage'){
 		
 			echo 'testing' 
+		
+		
+	}
+
+	stage('teststage 4 CODE SCANNING DEMO FOR Kalpana'){
+		
+			echo 'kalpana code scanning' 
 		
 		
 	}
